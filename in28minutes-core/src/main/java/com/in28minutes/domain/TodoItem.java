@@ -99,7 +99,7 @@ public class TodoItem implements Serializable {
 	@Override
 	public String toString() {
 		return String
-				.format("TodoItem [id=%s, userId=%s, user=%s, title=%s, done=%s, priority=%s, dueDate=%s]",
+				.format("My TodoItem [id=%s, userId=%s, user=%s, title=%s, done=%s, priority=%s, dueDate=%s]",
 						id, userId, "", title, done, priority, dueDate);
 	}
 
