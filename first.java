@@ -4,6 +4,6 @@ class First
 	{
       System.out.println("This is my first program in java");
       System.out.println("Adding the second line");
-      System.out.println("Adding the thrid");
+      System.out.println("Adding the thrid change");
   	}//End of main
 	}//End of FirstJavaProgram Class
