@@ -67,7 +67,9 @@
                     <version>2.2</version>
                     <configuration>
                         <warFile>target/in28minutes.war</warFile>
-                        <path>/</path>
+                        <url>http://54.85.89.159:8080/manager/text</url>
+                        <server>TomcatServer</server>
+                        <path>in28minutes</path>
                         <contextReloadable>true</contextReloadable>
                     </configuration>
                 </plugin>
