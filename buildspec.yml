@@ -1,0 +1,26 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    
+
+phases:
+  install:
+    commands:
+      
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn install
+  post_build:
+    commands:
+      - ls -la target
+      - aws s3 cp target s3://kinesis01/ --recursive
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - target/in28minutes.war
+  discard-paths: yes
