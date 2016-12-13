@@ -1,13 +1,7 @@
 version: 0.1
 
-environment_variables:
-  plaintext:
-    
-
 phases:
-  install:
-    commands:
-      
+
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
