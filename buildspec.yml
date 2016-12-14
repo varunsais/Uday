@@ -11,10 +11,8 @@ phases:
       - mvn install
   post_build:
     commands:
-      - echo `ls -la .`
-      - aws s3 cp target s3://kinesis01/ --recursive
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/in28minutes.war
+    - in28minutes-web-servlet-jsp/target/in28minutes.war
   discard-paths: yes
