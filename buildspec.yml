@@ -11,7 +11,7 @@ phases:
       - mvn install
   post_build:
     commands:
-      - ls -la target
+      - echo `ls -la .`
       - aws s3 cp target s3://kinesis01/ --recursive
       - echo Build completed on `date`
 artifacts:
